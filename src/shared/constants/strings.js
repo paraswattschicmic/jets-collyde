@@ -10,7 +10,7 @@ export const TEXT_CONST = {
   TERMS: 'Terms and Conditions',
   PRIVACY: 'Privacy Policy',
   TermsAndConditions: 'By signing up for Collyde, you agree to our ',
-  WATCH_PARTIES: 'WATCH PARTIES',
+  WATCH_PARTIES: 'Lounge',
   PULL_TO_REFRESH: 'Pull to refresh',
   EXPLORE_PARTIES: 'Explore Parties',
   NO_ROOM_JOINED: 'No Room joined.',
