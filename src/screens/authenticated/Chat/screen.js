@@ -251,7 +251,7 @@ const Chat = ({
         SocketManager.sharedManager.onJoinEvent(SOCKET_EVENTS.LIVE_OPERATION_EVENT, (val) => {
           if (val && val.channelUrl && val.channelUrl == groupChannel.url) {
             if (val.status == 1) {
-            //  console.log('came1');
+              //  console.log('came1');
               setIsUserHost(true);
               getMessageList(true, 'hotReload');
             } else if (val.status == 0) {
@@ -294,7 +294,7 @@ const Chat = ({
           }
         });
         SocketManager.sharedManager.onConnect((val) => {
-         // console.log('Reconnect Chat');
+          // console.log('Reconnect Chat');
           if (route.params.watchPartyId && route.params.watchPartyId != '') {
             SocketManager.sharedManager.emitEvent(SOCKET_EVENTS.JOIN_EVENT, {
               watchPartyId: route.params.watchPartyId,
@@ -569,9 +569,9 @@ const Chat = ({
           message &&
           message._sender &&
           message._sender.userId &&
-          message._sender &&
-          message._sender.plainProfileUrl &&
-          message._sender.nickname
+          message._sender
+          // message._sender.plainProfileUrl &&
+          // message._sender.nickname
         ) {
           let senderRole = message._sender.role
             ? `${message._sender.role}`
